@@ -1,0 +1,141 @@
+/*Kleuren pallette:
+Red Crayola     #ED254E
+Naples Yellow   #F9DC5C    
+Mint Cream      #F4FFFD
+Oxford Blue     #011936
+Black Coral     #465362
+*/
+
+
+/*
+GEIMPORTEERDE FONTS:
+font-family: 'Bebas Neue', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Creepster', cursive;
+font-family: 'Gruppo', cursive;
+font-family: 'Henny Penny', cursive;
+font-family: 'IM Fell English SC', serif;
+font-family: 'Mate SC', serif;
+font-family: 'Monoton', cursive;
+font-family: 'Noto Serif', serif;
+font-family: 'Raleway Dots', cursive;
+font-family: 'Rubik Glitch', cursive;
+font-family: 'Rubik Moonrocks', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Staatliches', cursive;
+font-family: 'Syncopate', sans-serif;
+font-family: 'VT323', monospace;
+*/
+
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar ul li{
+    list-style-type: none;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+  /*nav bar*/
+  .nav-bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .nav-bar ul li{
+    display: inline;
+    float: right;
+    border-right: 1px dotted #bbb;
+  }
+  .nav-bar ul li:last-child{
+  border-left: 1px dotted #bbb;
+  }
+  .nav-bar ul li a{
+    display: block;
+    padding: 14px 16px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #home{
+    float: left;
+  }
+  .nav-bar li a:hover{
+    background-color: aqua;
+  }
+  .active{
+    background-color:palegreen !important; 
+  }
+  /*einde nav bar */
+  
+  /* ~~! PaardenSprong !~~ */
+
+  #spelWrapper{
+    margin-top: 200px;
+    margin-left: 10%;
+    background-color: #333;
+    width: 80%;
+    border: 2px solid #011936;
+  }
+  .btn-paard{
+    display: inline-block;  
+    margin: 20px 20px;
+    width: 27%;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    height: 100px;
+    padding-top: 50px;
+    border: 2px solid white;
+    font-size: xx-large;
+    font-family: 'Gruppo', cursive;
+  }
+  .btn-paard:hover{
+    background-color: rgb(26, 26, 26);
+  }
+  #resultaat{
+    border-top: 2px solid white;
+    font-family: 'Gruppo', cursive;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+  }
+  #start{
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    height: 100px;
+    padding-top: 50px;
+    border: 2px solid white;
+    font-size: xx-large;
+    font-family: 'Gruppo', cursive;
+  }
+  #start:hover{
+    background-color: #bbb;
+  }
+  #score{
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    height: 100px;
+    padding-top: 50px;
+    border: 2px solid white;
+    font-size: xx-large;
+    font-family: 'Gruppo', cursive;
+  }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel+Decorative&family=Creepster&family=Gruppo&family=Henny+Penny&family=IM+Fell+English+SC&family=Mate+SC&family=Monoton&family=Noto+Serif:ital@1&family=Raleway+Dots&family=Rubik+Glitch&family=Rubik+Moonrocks&family=Six+Caps&family=Staatliches&family=Syncopate&family=VT323&display=swap" rel="stylesheet">
+    <!--einde google fonts-->
+    <script src="paardensprong.js"></script>
+    <title>Paardensprong</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li><a href="paardensprong.html" class="active">Paardensprong</a></li>
+                <li><a href="">test</a></li>
+                <li><a href="">test</a></li>
+            </ul>
+        </nav>
+    </header>
+
+                <div id="spelWrapper">
+                    <div id="paardensprong" class="content">
+                        <button class="btn-paard" id="a1" onclick="paardenSprong()"></button>
+                        <button class="btn-paard" id="b1" onclick="paardenSprong()"></button>
+                        <button class="btn-paard" id="c1" onclick="paardenSprong()"></button>
+                        <button class="btn-paard" id="a2" onclick="paardenSprong()"></button>
+                        <button class="btn-paard" id="reset" onclick="reset()">Reset</button>
+                        <button class="btn-paard" id="c2" onclick="paardenSprong()"></button>
+                        <button class="btn-paard" id="a3" onclick="paardenSprong()"></button>
+                        <button class="btn-paard" id="b3" onclick="paardenSprong()"></button>
+                        <button class="btn-paard" id="c3" onclick="paardenSprong()"></button>
+                    </div>
+                    <div id="resultaat">
+                    </div>
+                    <div id="startknop">
+                        <button id="start" onclick="startSpel()">Start</button>
+                    </div>
+                    <div id="score">
+                        Score: 0
+                    </div>
+                </div>
+    
+   
+
+</body>
+</html>

@@ -53,6 +53,7 @@ window.onload = (event) => {
         //nummer shuffle voor 1e index
         let i = [1, 2, 3, 4, 5, 6, 7, 8];
         shuffleArray(i);
+        console.log(woord);
         document.getElementById("a1").value = woord[letterCombinaties[i[0]][0]].toUpperCase();
         document.getElementById("b1").value = woord[letterCombinaties[i[0]][1]].toUpperCase();
         document.getElementById("c1").value = woord[letterCombinaties[i[0]][2]].toUpperCase();
@@ -92,7 +93,7 @@ window.onload = (event) => {
     let teller = 0;
     function controleerWoord(woord){
         resultaat = document.getElementById("resultaat").innerHTML;
-        if (resultaat == woord){
+        if (resultaat.toLowerCase() == woord){
             alert("Goed!");
             updateWoord(woordenLijst,woordIndex,teller);
             teller += 1;
@@ -113,7 +114,8 @@ window.onload = (event) => {
     reset.onclick = function(){document.getElementById("resultaat").innerHTML = "";resetButtonKleuren();}
 };
 
-  //winst alert vervangen voor melding op scherm. 
+  //winst alert vervangen voor melding op scherm.
+  //melding als geen paardensprong 
   //hover werkt niet meer nadat de value gereset is(dus na start geklikt te hebben), waarom?
 
   

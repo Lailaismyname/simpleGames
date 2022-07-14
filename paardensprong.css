@@ -91,7 +91,19 @@ font-family: 'Codystar', cursive;
     font-family: 'Gruppo', cursive;
     border-radius: 5px;
   }
-
+  /* MEDIA QUERIES~ */
+  @media screen and (max-width: 845px) {
+    .btn-paard{
+      width: 20%;
+      font-size: medium;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .btn-paard{
+      width: 17%;
+      font-size: small;
+    }
+  }
   /* mediaqueries
   Using min-width
 

@@ -1,9 +1,9 @@
-/*Kleuren pallette:
-Red Crayola     #ED254E
-Naples Yellow   #F9DC5C    
-Mint Cream      #F4FFFD
-Oxford Blue     #011936
-Black Coral     #465362
+/* KLEUREN PALETTE
+blush           #EA638C
+Fandango        #B33C86
+Russian Violet  #190E4F
+Oxford Blue     #03012C
+Dark Green      #002A22
 */
 
 
@@ -25,6 +25,8 @@ font-family: 'Six Caps', sans-serif;
 font-family: 'Staatliches', cursive;
 font-family: 'Syncopate', sans-serif;
 font-family: 'VT323', monospace;
++
+font-family: 'Codystar', cursive;
 */
 
 
@@ -35,6 +37,7 @@ body{
 
 .nav-bar ul li{
     list-style-type: none;
+    font-family: 'Codystar', cursive;
 }
 
 .nav-bar ul li a{
@@ -48,7 +51,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #03012C;
     position: fixed;
     top: 0;
     width: 100%;
@@ -56,15 +59,15 @@ body{
   .nav-bar ul li{
     display: inline;
     float: right;
-    border-right: 1px dotted #bbb;
+    border-right: 1px solid #bbb;
   }
   .nav-bar ul li:last-child{
-  border-left: 1px dotted #bbb;
+  border-left: 1px solid #bbb;
   }
   .nav-bar ul li a{
     display: block;
     padding: 14px 16px;
-    background-color: #333;
+    background-color: #03012C;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -73,69 +76,9 @@ body{
     float: left;
   }
   .nav-bar li a:hover{
-    background-color: aqua;
+    background-color: #190E4F;
   }
   .active{
-    background-color:palegreen !important; 
+    background-color:#002A22 !important; 
   }
   /*einde nav bar */
-  
-  /* ~~! PaardenSprong !~~ */
-
-  #spelWrapper{
-    margin-top: 200px;
-    margin-left: 10%;
-    background-color: #333;
-    width: 80%;
-    border: 2px solid #011936;
-  }
-  .btn-paard{
-    display: inline-block;  
-    margin: 20px 20px;
-    width: 27%;
-    color: white;
-    background-color: #333;
-    text-align: center;
-    height: 100px;
-    padding-top: 50px;
-    border: 2px solid white;
-    font-size: xx-large;
-    font-family: 'Gruppo', cursive;
-  }
-  .btn-paard:hover{
-    background-color: rgb(26, 26, 26);
-  }
-  #resultaat{
-    border-top: 2px solid white;
-    font-family: 'Gruppo', cursive;
-    color: white;
-    font-size: xx-large;
-    text-align: center;
-  }
-  #start{
-    display: block;
-    width: 100%;
-    color: white;
-    background-color: #333;
-    text-align: center;
-    height: 100px;
-    padding-top: 50px;
-    border: 2px solid white;
-    font-size: xx-large;
-    font-family: 'Gruppo', cursive;
-  }
-  #start:hover{
-    background-color: #bbb;
-  }
-  #score{
-    display: block;
-    width: 100%;
-    color: white;
-    background-color: #333;
-    text-align: center;
-    height: 100px;
-    padding-top: 50px;
-    border: 2px solid white;
-    font-size: xx-large;
-    font-family: 'Gruppo', cursive;
-  }

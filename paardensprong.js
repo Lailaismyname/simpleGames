@@ -83,13 +83,14 @@ window.onload = (event) => {
     b3.onclick = function(){b3.style.background='#011936';copyContent(b3);controleerWoord(woord,teller)};
     c3.onclick = function(){c3.style.background='#011936';copyContent(c3);controleerWoord(woord,teller)};
     start.onclick = function(){start.innerHTML = "Volgende woord";startPositieToewijzing(woord);PrintLettersOpScherm(); woordIndex += 1};
-    reset.onclick = function(){document.getElementById("resultaat").innerHTML = "";}
+    reset.onclick = function(){document.getElementById("resultaat").innerHTML = "";resetButtonKleuren();}
 };
 
-
-  //NOTE TO SELF ruim de rommel op, reset knop moet ook kleuren resetten. 
+ 
   // Alles nog wat opleuken, en responsive maken. 
   //woordenlijst uitbreiden met meer woorden, van A tot Z
-  //
+  //foutmeldingen toevoeging als het geen paardensprong is.
+  //winst alert vervangen voor melding op scherm. 
+  //hover werkt niet meer nadat de value gereset is(dus na start geklikt te hebben), waarom?
 
   

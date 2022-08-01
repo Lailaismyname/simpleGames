@@ -50,7 +50,6 @@ window.onload = (event) => {
     
     //functies met letter combinaties.
     function startPositieToewijzing(woord) {
-        //nummer shuffle voor 1e index
         let i = [1, 2, 3, 4, 5, 6, 7, 8];
         shuffleArray(i);
         console.log(woord);
@@ -116,6 +115,5 @@ window.onload = (event) => {
 
   //winst alert vervangen voor melding op scherm.
   //melding als geen paardensprong 
-  //hover werkt niet meer nadat de value gereset is(dus na start geklikt te hebben), waarom?
 
   

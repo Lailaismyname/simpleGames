@@ -8,20 +8,41 @@ document.getElementById("start").addEventListener("click", ()=>{
 //print streepjes gelijk aan aantal letters. MAak maar functie van later!
 let lengteWoord = woorden[0].length;
 const laagStreepje = "_";
-document.getElementById("resultaat").innerHTML = laagStreepje.repeat(lengteWoord);
+let tekst = laagStreepje.repeat(lengteWoord);
+document.getElementById("resultaat").innerHTML = tekst;
 
-//nu op de klik van de knop, check of letter in het woord zit. indexOf??
-    //even checken of je letters kan gebruiken net als in de scuffed scrabble van c!??!
-    console.log("a ascci code is = " + "a".charCodeAt());
-    console.log(" z ascci code is = " + "z".charCodeAt());
 
-    console.log(String.fromCharCode(72));
-    // nu nog uitvogele hoe ik dit process dan weer omkeer, dus van asci naar uhm alfabet. 
-    // en dan 
-
-    //NOTETOSELF ik denk dat ik een query selector ga gebruiken op de buttons, en dan met class
-    //en dan even kijken of ik dan kan uitvolgen welke id de ingedrukte button heeft.
-    //dan dat kopieren en printen in het word. Als goed dan prima als fout updat img src.
-    
+    let teller = 0;
+    //the button clickevent
+    document.querySelectorAll('.toets').forEach(item => {
+        item.addEventListener('click', event => {
+            
+            let letterPositie = woorden[0].indexOf(event.target.id);
+            alert(event.target.id);
+            
+            
+            if (letterPositie >= 0){
+                //woorden is neit wat er in het streepje word geprint. dussss
+                //tekst[letterPositie] = event.target.id;
+                
+                console.log("lp: " + letterPositie);
+                console.log("tekst: " + tekst);
+            }
+            else if(letterPositie == -1){
+                teller ++;
+                let hangmansrc = "img/hangman" + teller + ".png";
+                document.getElementById("hangman").src = hangmansrc;
+                console.log(teller);
+            }
+            else {
+                return;
+            }
+        })
+      })
 
 }
+
+
+//nu nog de letters op de juiste plek zien te krijgen.
+// dan vergelijken als het woord goed is, en dan volgende woord. 
+//oof als game over melding maken ervoor. 

@@ -1,32 +1,39 @@
 window.onload = () => {
+
 const woorden = ["krokodil","kikker","gans","kat","panter","stoel","bureau","computer"];
+let lengteWoord = woorden[0].length;
+let tekst = [];
+console.log(tekst.length);
+const laagStreepje = "_";
+for (let i = 0; i <= (lengteWoord - 1); i++){
+    tekst.unshift(laagStreepje);
+}
+console.log("aftertekst: " + tekst);
+
+
+
 //Start knop
 document.getElementById("start").addEventListener("click", ()=>{
     document.getElementById('hangman').src="img/hangman0.png";
+    document.getElementById("resultaat").innerHTML = tekst;
 });
-
-//print streepjes gelijk aan aantal letters. MAak maar functie van later!
-let lengteWoord = woorden[0].length;
-const laagStreepje = "_";
-let tekst = laagStreepje.repeat(lengteWoord);
-document.getElementById("resultaat").innerHTML = tekst;
-
 
     let teller = 0;
     //the button clickevent
     document.querySelectorAll('.toets').forEach(item => {
         item.addEventListener('click', event => {
-            
             let letterPositie = woorden[0].indexOf(event.target.id);
-            alert(event.target.id);
-            
             
             if (letterPositie >= 0){
-                //woorden is neit wat er in het streepje word geprint. dussss
-                //tekst[letterPositie] = event.target.id;
+                tekst[letterPositie] = event.target.id;
                 
-                console.log("lp: " + letterPositie);
-                console.log("tekst: " + tekst);
+                for(let i = 0; i <= woorden.length; i++){
+                    letterPositie = woorden[0].indexOf(event.target.id,(letterPositie + 1));
+                    tekst[letterPositie] = event.target.id;
+                    document.getElementById("resultaat").innerHTML = tekst.join(' ');
+                    woordCheck = tekst.toString();
+                }
+                
             }
             else if(letterPositie == -1){
                 teller ++;
@@ -34,15 +41,18 @@ document.getElementById("resultaat").innerHTML = tekst;
                 document.getElementById("hangman").src = hangmansrc;
                 console.log(teller);
             }
-            else {
-                return;
+            else if(woorden[0] === tekst.toString()){
+                alert("Winst");
             }
+            console.log(woordCheck + woorden[0]);
         })
       })
 
 }
 
 
-//nu nog de letters op de juiste plek zien te krijgen.
-// dan vergelijken als het woord goed is, en dan volgende woord. 
-//oof als game over melding maken ervoor. 
+// uhm de alert als het woord goed is gaat niet goed. 
+//moet nog iets van een game over ding toegevoegd worden.
+// shit wat mooier maken
+//mischien de hangman ook wat mooier maken
+//code opruimen want damn rommel man

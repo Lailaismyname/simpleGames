@@ -1,0 +1,45 @@
+/* KLEUREN PALETTE
+blush           #EA638C
+Fandango        #B33C86
+Russian Violet  #190E4F
+Oxford Blue     #03012C
+Dark Green      #002A22
+*/
+
+
+/*
+GEIMPORTEERDE FONTS:
+font-family: 'Bebas Neue', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Creepster', cursive;
+font-family: 'Gruppo', cursive;
+font-family: 'Henny Penny', cursive;
+font-family: 'IM Fell English SC', serif;
+font-family: 'Mate SC', serif;
+font-family: 'Monoton', cursive;
+font-family: 'Noto Serif', serif;
+font-family: 'Raleway Dots', cursive;
+font-family: 'Rubik Glitch', cursive;
+font-family: 'Rubik Moonrocks', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Staatliches', cursive;
+font-family: 'Syncopate', sans-serif;
+font-family: 'VT323', monospace;
++
+font-family: 'Codystar', cursive;
+*/
+
+#memoryBox{
+    width: 420px;
+    margin: auto;
+    border: 2px solid #333;
+    border-radius: 5px;;
+    margin-top: 50px;
+}
+
+.memoryImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
